@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
-  get 'payment/index'
+  
+  resources :news 
+  resources :users
+  
 
-  get 'contact/index'
+  
+  get 'payment/index' => 'payment#index'
 
-  get 'campus/index'
+  get 'contact/index' => 'contact#index'
 
-  get 'admission/index'
+  get 'campus/index' => 'campus#index'
 
-  get 'academic/index'
+  get 'admission/index' => 'admission#index'
+
+  get 'academic/index' 
 
   get 'news/index'
 
