@@ -3,14 +3,14 @@ Rails.application.routes.draw do
   resources :news 
   resources :users
   
-
+  get '/' => 'home#index'
   
   get 'payment/index' => 'payment#index'
 
   get 'contact/index' => 'contact#index'
 
   get 'campus/index' => 'campus#index'
-
+  
   get 'admission/index' => 'admission#index'
 
   get 'academic/index' 

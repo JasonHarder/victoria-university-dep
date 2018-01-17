@@ -60,3 +60,6 @@ gem 'autoprefixer-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 # gem for bootstrap web styles.
+
+#gem for payment -> may not need depends on whats needed for api access
+gem 'stripe'
